@@ -7,12 +7,14 @@
     "build": "hardhat compile && yarn deploy && next build",
     "build1": "next build",
     "start": "next start",
+    "start1": "next",
     "deploy": "hardhat compile && hardhat run --network ${NETWORK} scripts/deploy.ts",
     "test": "hardhat test"
   },
   "type": "module",
   "dependencies": {
     "@iexec/dataprotector": "^0.3.0",
+    "@iexec/web3mail": "^0.5.2",
     "@noir-lang/backend_barretenberg": "^0.17.0",
     "@noir-lang/noir_js": "^0.17.0",
     "@noir-lang/noir_wasm": "^0.17.0",
@@ -25,6 +27,7 @@
     "dotenv": "^16.0.3",
     "ethers": "5.7.2",
     "hardhat": "^2.17.0",
+    "iexec": "8.4.0",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
